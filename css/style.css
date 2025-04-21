@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
-html, body{
+html, body {
+    cursor: nw-resize;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -12,7 +12,7 @@ html, body{
     text-align: center;
     font-size: 90px;
     font-family: 'Fredericka the Great', cursive;
-    
+    margin-top: 20px;
     color: white;
     position: absolute;
     text-shadow: 3px 2px 20px rgb(150, 255, 167);
@@ -30,7 +30,7 @@ html, body{
 }
 
 .skill {
-    margin-top: 60%;
+    margin-top: 100px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     color: rgb(0, 0, 0);
@@ -41,10 +41,14 @@ html, body{
 }
 
 @keyframes skil {
-    to {left: 0%;}
-    from{
+    to {
+        left: 37%;
+    }
+    from {
         left: -50%;
     }
 }
 
-
+.matrix {
+    position: fixed;
+}
