@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +10,113 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        html, body {
+            height: 100%;
+            min-height: 100vh;
+            min-width: 100vw;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+            position: relative;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+        #matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw !important;
+            height: 100vh !important;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .main-content {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 32px;
+        }
+        .luis {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            margin: 0;
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            text-align: center;
+            text-shadow: 3px 2px 20px rgb(150, 255, 167);
+        }
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        .skill {
+            margin: 32px 0 0 0;
+            width: 90vw;
+            max-width: 700px;
+            background: rgba(0,0,0,0.85);
+            border-radius: 16px;
+            padding: 24px 5vw;
+            color: white;
+            box-shadow: 0 0 32px #38FFBD33;
+        }
+        @media (max-width: 600px) {
+            .skill {
+                padding: 18px 2vw;
+            }
+            .luis {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <div class="row justify-content-center">
-                <h1 class="luis">Luis Peralta</h1>
-            </div>
-        </div>
-    </header>
-
-    <div class="container-fluid" id="skills">
-        <div class="row justify-content-center">          
-                <div class="skill">
-                    <h3>Developer Frontend</h3>
-                </div>    
-        </div>
-    </div>
-
     <canvas id="matrix">Hello, I'm Luis Peralta</canvas>
+    <div class="main-content">
+        <header>
+            <h1 class="luis">Luis Alejandro Peralta</h1>
+        </header>
+        <main>
+            <section class="skill">
+                <h2 style="font-family:'Press Start 2P',cursive; font-size:clamp(1.1rem,2.5vw,1.5rem); color:#38FFBD; text-shadow:3px 2px 20px rgb(150,255,167); margin-bottom:10px;">QA Automation Engineer</h2>
+                <p style="font-family:'Press Start 2P',cursive; font-size:clamp(0.85rem,2vw,1rem); color:white; margin-bottom:10px;">Automation specialist with experience in WebdriverIO, Puppeteer, Selenium, Rest Assured, and CI/CD. Passionate about software quality and agile teamwork.</p>
+                <ul style="font-family:'Press Start 2P',cursive; font-size:clamp(0.8rem,1.7vw,0.95rem); color:white; list-style:inside disc; margin-bottom:10px;">
+                    <li>Stensul (2022–Present): Automated regression suites, managed test plans.</li>
+                    <li>Globant (2021–2022): API/Web/Salesforce automation, Gherkin DSL.</li>
+                    <li>Innew (2021): Responsive e-commerce, Agile teams.</li>
+                </ul>
+                <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:10px;">
+                    <span style="font-family:'Press Start 2P',cursive; font-size:clamp(0.7rem,1.5vw,0.9rem); color:#38FFBD; background:#111; border-radius:8px; padding:4px 10px;">WebdriverIO</span>
+                    <span style="font-family:'Press Start 2P',cursive; font-size:clamp(0.7rem,1.5vw,0.9rem); color:#38FFBD; background:#111; border-radius:8px; padding:4px 10px;">Puppeteer</span>
+                    <span style="font-family:'Press Start 2P',cursive; font-size:clamp(0.7rem,1.5vw,0.9rem); color:#38FFBD; background:#111; border-radius:8px; padding:4px 10px;">Selenium</span>
+                    <span style="font-family:'Press Start 2P',cursive; font-size:clamp(0.7rem,1.5vw,0.9rem); color:#38FFBD; background:#111; border-radius:8px; padding:4px 10px;">Rest Assured</span>
+                    <span style="font-family:'Press Start 2P',cursive; font-size:clamp(0.7rem,1.5vw,0.9rem); color:#38FFBD; background:#111; border-radius:8px; padding:4px 10px;">CI/CD</span>
+                </div>
+                <div style="font-family:'Press Start 2P',cursive; font-size:clamp(0.8rem,1.5vw,0.95rem); color:#38FFBD; margin-bottom:6px;">English (B2) | Spanish (Native)</div>
+                <div style="font-family:'Press Start 2P',cursive; font-size:clamp(0.8rem,1.5vw,0.95rem); color:white;">
+                    <a href="mailto:luis_peralta_000@hotmail.com" style="color:#38FFBD; text-decoration:none;">luis_peralta_000@hotmail.com</a> |
+                    <a href="https://www.linkedin.com/in/luisalejandroperalta/" target="_blank" style="color:#38FFBD; text-decoration:none;">LinkedIn</a> |
+                    <a href="https://github.com/Luis-Peralta" target="_blank" style="color:#38FFBD; text-decoration:none;">GitHub</a>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="js/main.js"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
@@ -42,5 +127,4 @@
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
